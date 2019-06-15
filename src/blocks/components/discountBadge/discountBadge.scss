@@ -1,0 +1,20 @@
+.discount-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 44px;
+    height: 32px;
+    background-color: $color-attention-neutral;
+    color: $color-light;
+    font: 700 17px $font-condenced;
+    padding: 14px 5px 0;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -36px;
+        border: 22px solid transparent;
+        border-top: 14px solid $color-attention-neutral;
+    }
+}
