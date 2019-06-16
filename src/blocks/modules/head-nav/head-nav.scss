@@ -1,0 +1,34 @@
+.head-nav {
+    display: flex;
+    &__buttons {
+        display: flex;
+    }
+    &__button {
+        @include blocksize(157px, 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 700 15px / 22px $font-condenced;
+        color: $color-light;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: $color-attention-neutral;
+        &--dark {
+            background-color: $color-attention-neutral-hard;
+        }
+    }
+    &__menu {
+        display: flex;
+        list-style: none;
+        font: 700 15px / 22px $font-condenced;
+        text-transform: uppercase;
+        
+        &-link {
+            color: $color-text-type;
+            text-decoration: none;
+            &:hover {
+                color: $color-attention-warm;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+div.topbar
+   div.topbar__logo
+      img(src="/img/logo.png", alt="logo")
+   div.topbar__search
+      input(name="headsearch", type="text/css", placeholder="Поиск по артикулу или названию")
+   div.topbar__phone
+      p Телефон
+      a(href="84832312331").topbar__phone-num 8 4832 31-23-31
+   div.topbar__person
+      +login-icon
+      p.topbar__person-label Личный кабинет
+   div.topbar__cart
+      +cart-icon
+      p.topbar__cart-label Корзина

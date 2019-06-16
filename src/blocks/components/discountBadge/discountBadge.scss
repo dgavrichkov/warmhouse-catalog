@@ -12,8 +12,8 @@
     &::after {
         content: "";
         position: absolute;
-        left: 0;
         bottom: -36px;
+        left: 0;
         border: 22px solid transparent;
         border-top: 14px solid $color-attention-neutral;
     }
