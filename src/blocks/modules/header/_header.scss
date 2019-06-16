@@ -1,0 +1,11 @@
+.header {
+    &__top {
+        @include container();
+        padding: 0;
+    }
+
+    &__nav {
+        @include container();
+        padding: 0;
+    }
+}

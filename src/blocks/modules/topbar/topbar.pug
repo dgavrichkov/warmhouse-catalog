@@ -7,8 +7,10 @@ div.topbar
       p Телефон
       a(href="84832312331").topbar__phone-num 8 4832 31-23-31
    div.topbar__person
-      +login-icon
-      p.topbar__person-label Личный кабинет
+      .topbar__person-icon   
+         +login-icon
+      a(href="#").topbar__person-link.topbar-link Личный кабинет
    div.topbar__cart
-      +cart-icon
-      p.topbar__cart-label Корзина
+      .topbar__cart-icon
+         +cart-icon
+      a(href="#").topbar__cart-link.topbar-link Корзина
