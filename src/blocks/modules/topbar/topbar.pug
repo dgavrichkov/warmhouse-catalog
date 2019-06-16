@@ -1,16 +1,18 @@
 div.topbar
    div.topbar__logo
       img(src="/img/logo.png", alt="logo")
-   div.topbar__search
-      input(name="headsearch", type="text/css", placeholder="Поиск по артикулу или названию")
-   div.topbar__phone
-      p Телефон
-      a(href="84832312331").topbar__phone-num 8 4832 31-23-31
-   div.topbar__person
-      .topbar__person-icon   
-         +login-icon
-      a(href="#").topbar__person-link.topbar-link Личный кабинет
-   div.topbar__cart
-      .topbar__cart-icon
-         +cart-icon
-      a(href="#").topbar__cart-link.topbar-link Корзина
+   div.topbar__items
+      div.topbar__search
+         label(for="headsearch").visually-hidden Поиск
+         input(name="headsearch", id="headsearch" type="text/css", placeholder="Поиск по артикулу или названию").topbar__search-field
+      div.topbar__phone
+         p.topbar__phone-label Телефон
+         a(href="84832312331").topbar__phone-num 8 4832 31-23-31
+      div.topbar__person
+         .topbar__person-icon   
+            +login-icon
+         a(href="#").topbar__person-link.topbar-link Личный кабинет
+      div.topbar__cart
+         .topbar__cart-icon
+            +cart-icon
+         a(href="#").topbar__cart-link.topbar-link Корзина

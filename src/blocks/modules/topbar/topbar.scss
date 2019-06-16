@@ -1,9 +1,50 @@
 .topbar {
     display: flex;
     align-items: center;
+    min-height: 110px;
 
     &__logo {
+        width: 315px;
+    }
 
+    &__search {
+        display: flex;
+        align-items: center;
+
+        &-field {
+            display: block;
+            width: 450px;
+            height: 50px;
+            padding-left: 20px;
+            font: 400 15px/22px $font-sans;
+            color: $color-text-type;
+            border: 1px solid $color-line;
+            background-color: $color-bar;
+            &::placeholder {
+                color: $color-text-secondary;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    &__phone {
+        padding-top: 10px;
+        &-label {
+            font: 400 15px/15px $font-sans;
+            color: $color-text-type;
+            margin-bottom: 5px;
+        }
+
+        &-num {
+            font: 700 24px/24px $font-condenced;
+            text-decoration: none;
+            color: $color-text-hard;
+        }
     }
 
     &__person {
@@ -16,11 +57,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         &-icon {
             svg {
                 width: 35px;
-                height: 32px;
+                height: 30px;
             }
         }
     }
@@ -30,5 +70,9 @@
         color: $color-text-type;
         text-transform: uppercase;
         font: 700 15px/22px $font-condenced;
+
+        &:hover {
+            color: $color-attention-warm;
+        }
     }
 }
