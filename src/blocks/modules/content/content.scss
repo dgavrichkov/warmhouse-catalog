@@ -1,3 +1,12 @@
-.content{
-   display: flex;
+.content {
+    display: flex;
+    padding: 0;
+    &__aside {
+        display: flex;
+        min-width: 315px;
+    }
+
+    &__main {
+        flex-grow: 1;
+    }
 }

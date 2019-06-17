@@ -1,0 +1,21 @@
+.site-desc {
+    // display: flex;
+    @include row-flex();
+    margin-bottom: 80px;
+    &__title {
+        @include col();
+        @include size(6);
+        font: 700 70px/60px $font-condenced;
+        color: $color-text-hard;
+    }
+
+    &__text {
+        @include col();
+        @include size(6);
+        font: 400 15px/22px $font-sans;
+        color: $color-text-type;
+    }
+    &__pg:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
