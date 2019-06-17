@@ -1,0 +1,40 @@
+.catalog {
+    &__title {
+        font: 700 30px/40px $font-condenced;
+        color: $color-text-hard;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__sorting {
+        display: flex;
+        align-items: center;
+        min-height: 50px;
+        margin: 0;
+        background-color: $color-bar;
+        padding-left: 20px;
+        padding-right: 20px;
+        &-item {
+            display: flex;
+            align-items: center;
+        }
+
+        &-cap {
+            font: 400 12px/18px $font-sans;
+            color: $color-text-secondary;
+            margin-right: 15px;
+        }
+
+        &-orders {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            font: 400 12px/18px $font-sans;
+            color: $color-text-hard;
+        }
+        &-order {
+            padding-right: 13px; // для псевдоэлемета
+            margin-right: 5px;
+        }
+    }
+}

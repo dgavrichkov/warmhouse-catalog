@@ -1,11 +1,13 @@
 .catalog
-   h1 Котлы, котельное оборудование
-   div
-      p Показать сначала
-      ul
-         li Дорогие
-         li Популярные
-      p Выводить по: 
-      select
-         option 10
-         option 20
+   h1.catalog__title Котлы, котельное оборудование
+   div.catalog__sorting
+      div.catalog__sorting-item
+         p.catalog__sorting-cap Показать сначала:
+         ul.catalog__sorting-orders
+            li.catalog__sorting-order.catalog__sorting-order--cost Дорогие
+            li.catalog__sorting-order.catalog__sorting-order--popular Популярные
+      div.catalog__sorting-item
+         p.catalog__sorting-cap Выводить по: 
+         select.catalog__sorting-select
+            option 10
+            option 20
