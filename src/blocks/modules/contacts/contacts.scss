@@ -1,0 +1,57 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 2px);
+        background-color: $color-bar;
+        min-height: 320px;
+        padding: 50px 21px;
+        &--left {
+            padding-right: 180px;
+            background-image: url("/img/phone.png");
+            background-repeat: no-repeat;
+            background-position-x: 314px;
+            background-position-y: 84px;
+        }
+        &--right {
+            padding-left: 180px;
+            background-image: url("/img/laptop.png");
+            background-repeat: no-repeat;
+            background-position-x: -115px;
+            background-position-y: 50px;
+        }
+    }
+
+    &__cap {
+        color: $color-text-hard;
+        font: 700 24px/24px $font-condenced;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: $color-text-type;
+        font: 400 15px/22px $font-sans;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        margin-top: auto;
+        border-radius: 3px;
+        background-color: $color-attention-cold;
+        color: $color-light;
+        font: 700 15px/15px $font-condenced;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover,
+        &:active {
+            background-color: $color-attention-cold-act;
+        }
+    }
+}
