@@ -1,5 +1,5 @@
 .head-nav {
-    @include container();
+    // @include container();
     display: flex;
     padding: 0;
     &__buttons {
@@ -26,6 +26,7 @@
         padding-left: 30px;
         padding-right: 30px;
         display: flex;
+        flex-wrap: wrap;
         flex-grow: 1;
         justify-content: space-between;
         list-style: none;
