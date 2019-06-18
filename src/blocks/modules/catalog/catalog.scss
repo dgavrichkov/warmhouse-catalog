@@ -8,6 +8,7 @@
 
     &__sorting {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         min-height: 50px;
         margin: 0;

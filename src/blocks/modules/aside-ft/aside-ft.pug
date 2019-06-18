@@ -1,15 +1,28 @@
 .aside-ft
-   h2 Подбор по параметрам
-   form
-      fieldset
-         legend Марка
-         ul
-            li Ariston
-            li Baxi
-            li Protherm
-            li Лемакс
-      fieldset
-         legend Цена
-         ul
-            li От
-            li До
+   h2.aside-ft__title Подбор по параметрам
+   form.aside-ft__form
+      fieldset.aside-ft__set
+         legend.aside-ft__set-cap Марка
+         ul.aside-ft__brand-list
+            li.aside-ft__brand-item
+               input(type="checkbox", name="brand", id="brand-ariston") 
+               label(for="brand-ariston") Ariston
+            li.aside-ft__brand-item
+               input(type="checkbox", name="brand", id="brand-baxi") 
+               label(for="brand-baxi") Baxi
+            li.aside-ft__brand-item
+               input(type="checkbox", name="brand", id="brand-protherm")  
+               label(for="brand-protherm") Protherm
+            li.aside-ft__brand-item
+               input(type="checkbox", name="brand", id="brand-lemax") 
+               label(for="brand-lemax") Лемакс
+      fieldset.aside-ft__set
+         legend.aside-ft__set-cap Цена
+         ul.aside-ft__price
+            li.aside-ft__price-item 
+               label От
+               input(type="text", name="", placeholder="300").aside-ft__price-input
+            li.aside-ft__price-item
+               label До
+               input(type="text", name="", placeholder="500").aside-ft__price-input
+         div.aside-ft__price-slider

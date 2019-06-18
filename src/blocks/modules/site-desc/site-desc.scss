@@ -5,6 +5,8 @@
     &__title {
         @include col();
         @include size(6);
+        @include size-lg(12);
+        @include lg(margin-bottom, 20px);
         font: 700 70px/60px $font-condenced;
         color: $color-text-hard;
     }
@@ -12,6 +14,7 @@
     &__text {
         @include col();
         @include size(6);
+        @include size-lg(12);
         font: 400 15px/22px $font-sans;
         color: $color-text-type;
     }
