@@ -11,8 +11,8 @@
     }
 
     &__set {
-        border: none;
         margin: 0;
+        border: none;
         padding: 0;
         &-cap {
             font: 700 17px $font-condenced;
@@ -26,12 +26,29 @@
     &__brand-item {
         font: 300 15px/22px $font-sans;
         color: $color-text-type;
+        margin-left: 15px;
+    }
+    &__brand-label {
+        position: relative;
+        padding-left: 24px;
+    }
+    &__brand-input + &__brand-label {
+        background: url("/img/checkbox.svg") no-repeat;
+    }
+    &__brand-input:hover + &__brand-label {
+        background: url("/img/checkbox-act.svg") no-repeat;
+    }
+    &__brand-input:checked + &__brand-label {
+        background-image: url("/img/checkbox-check.svg"), url("/img/checkbox-act.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position-x: 5px, 0;
+        background-position-y: 1px, 0;
     }
     &__price {
-        width: 100%;
-        list-style: none;
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        list-style: none;
         font: 400 15px/22px $font-sans;
         color: $color-text-type;
         &-item {
