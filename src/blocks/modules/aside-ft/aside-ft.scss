@@ -1,7 +1,5 @@
 .aside-ft {
     width: 100%;
-    outline: 1px solid gold;
-
     &__title {
         font: 700 17px $font-condenced;
         color: $color-text-hard;
@@ -12,38 +10,29 @@
 
     &__set {
         margin: 0;
+        margin-bottom: 20px;
         border: none;
         padding: 0;
+
         &-cap {
+            position: relative;
             font: 700 17px $font-condenced;
             color: $color-text-hard;
+            margin-bottom: 12px;
+            padding-left: 15px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 6px;
+                height: 3px;
+                background: url("/img/arrow.svg") no-repeat;
+            }
         }
     }
 
-    &__brand-list {
-        list-style: none;
-    }
-    &__brand-item {
-        font: 300 15px/22px $font-sans;
-        color: $color-text-type;
-        margin-left: 15px;
-    }
-    &__brand-label {
-        position: relative;
-        padding-left: 24px;
-    }
-    &__brand-input + &__brand-label {
-        background: url("/img/checkbox.svg") no-repeat;
-    }
-    &__brand-input:hover + &__brand-label {
-        background: url("/img/checkbox-act.svg") no-repeat;
-    }
-    &__brand-input:checked + &__brand-label {
-        background-image: url("/img/checkbox-check.svg"), url("/img/checkbox-act.svg");
-        background-repeat: no-repeat, no-repeat;
-        background-position-x: 5px, 0;
-        background-position-y: 1px, 0;
-    }
     &__price {
         display: flex;
         justify-content: space-between;
@@ -51,24 +40,81 @@
         list-style: none;
         font: 400 15px/22px $font-sans;
         color: $color-text-type;
+
         &-item {
             width: 140px;
         }
+
+        &-label {
+            position: relative;
+            padding-left: 15px;
+            font: 400 15px/30px $font-condenced;
+            &::after {
+                content: "₽";
+                color: $color-text-type;
+                position: absolute;
+                right: -100px;
+                bottom: -30px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+
         &-input {
+            display: block;
             width: 100%;
             height: 50px;
             border: 1px solid $color-line;
             border-radius: 3px;
             background-color: $color-bar;
             padding-left: 15px;
+            padding-right: 25px;
+            color: $color-text-type;
+
             &::placeholder {
                 color: $color-text-secondary;
             }
+            &:focus {
+                outline-color: $color-attention-cold-act;
+            }
+            &:hover {
+                border-color: $color-attention-cold-act;
+            }
         }
     }
+
     &__price-slider {
         width: 100%;
         height: 2px;
+        margin-top: 20px;
         background-color: $color-attention-neutral;
+    }
+}
+
+.checkgroup {
+    list-style: none;
+    &__item {
+        font: 300 15px/22px $font-sans;
+        color: $color-text-type;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    &__label {
+        position: relative;
+        padding-left: 32px;
+    }
+    &__input+&__label {
+        background: url("/img/checkbox.svg") no-repeat;
+    }
+
+    &__input:hover+&__label {
+        background: url("/img/checkbox-act.svg") no-repeat;
+    }
+
+    &__input:checked+&__label {
+        background-image: url("/img/checkbox-check.svg"), url("/img/checkbox-act.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position-x: 5px, 0;
+        background-position-y: 1px, 0;
     }
 }
