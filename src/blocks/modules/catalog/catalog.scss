@@ -37,8 +37,21 @@
         }
 
         &-order {
+            position: relative;
             padding-right: 13px; // для псевдоэлемета
-            margin-right: 5px;
+            margin-right: 8px;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 6px;
+                height: 3px;
+                top: 8px;
+                right: 2px;
+                background: url("/img/arrow.svg") no-repeat;
+            }
+        }
+        &-select {
+            border: none;
         }
     }
 }
