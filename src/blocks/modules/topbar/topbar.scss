@@ -11,12 +11,13 @@
     &__search {
         display: flex;
         align-items: center;
-
+        position: relative;
         &-field {
             display: block;
             width: 450px;
             height: 50px;
             padding-left: 20px;
+            padding-right: 40px;
             font: 400 15px/22px $font-sans;
             color: $color-text-type;
             border: 1px solid $color-line;
@@ -24,6 +25,16 @@
             &::placeholder {
                 color: $color-text-secondary;
             }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: -9px;
+            right: 15px;
+            width: 18px;
+            height: 18px;
+            background: url("/img/search.png") no-repeat;
         }
     }
 
