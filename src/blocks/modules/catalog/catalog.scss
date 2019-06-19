@@ -49,9 +49,12 @@
     &__card {
         @include col();
         @include size(3);
+        display: flex;
+        flex-direction: column;
         margin-bottom: 20px;
         min-width: 200px;
         min-height: 300px;
         border: 1px solid $color-line;
+        border-radius: 3px;
     }
 }
