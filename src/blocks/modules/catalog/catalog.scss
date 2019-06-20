@@ -28,7 +28,21 @@
             color: $color-text-secondary;
             margin-right: 15px;
         }
-
+        &-npages {
+            position: relative;
+            font: 400 12px/18px $font-sans;
+            color: $color-text-type;
+            padding-right: 15px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 8px;
+                right: 2px;
+                width: 6px;
+                height: 3px;
+                background: url("/img/arrow.svg") no-repeat;
+            }
+        }
         &-orders {
             display: flex;
             align-items: center;
@@ -44,10 +58,10 @@
             &::after {
                 content: "";
                 position: absolute;
-                width: 6px;
-                height: 3px;
                 top: 8px;
                 right: 2px;
+                width: 6px;
+                height: 3px;
                 background: url("/img/arrow.svg") no-repeat;
             }
         }

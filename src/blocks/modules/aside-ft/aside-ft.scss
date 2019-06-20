@@ -99,6 +99,21 @@
         background-color: $color-bar;
         font: 700 15px $font-condenced;
         color: $color-text-secondary;
+        
+        span {
+            position: relative;
+            padding-left: 25px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                margin-top: -5px;
+                width: 12px;
+                height: 12px;
+                background: url("/img/cross.png") no-repeat;
+            }
+        }
     }
 }
 
