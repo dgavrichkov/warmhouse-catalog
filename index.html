@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-pug-starter</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__top">
+        <div class="topbar container">
+          <div class="topbar__logo"><img src="img/logo.png" alt="logo"></div>
+          <div class="topbar__items">
+            <div class="topbar__search">
+              <label class="visually-hidden" for="headsearch">Поиск</label>
+              <input class="topbar__search-field" name="headsearch" id="headsearch" type="text/css" placeholder="Поиск по артикулу или названию">
+            </div>
+            <div class="topbar__phone">
+              <p class="topbar__phone-label">Телефон</p><a class="topbar__phone-num" href="84832312331">8 4832 31-23-31</a>
+            </div>
+            <div class="topbar__person">
+              <div class="topbar__person-icon">  
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="30">  
+                  <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAeCAMAAAAfOR5kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAaVBMVEX/jAD/////jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAD/jAAAAACx/PY5AAAAIXRSTlMAAB2M2vpg979MFwEYhuH8DZEq3cdxMOviRskUGXa87dJy1nksAAAAAWJLR0QiXWVcrAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MGDxUwIpvsMPYAAADNSURBVCjPndDnjoMwEEbRMcYUmyT0QNiU+/4vmUIJi7BW2u/X6Ej2FJExgQ6NCXUg6pNJo5hP4mjNESSptWkC0ZeDGO3ehdPEwcKaxI3PXIJeOCSdekhKuLDBzmwxf7HnE09Lz4CedXzLS3Y4nuB0PGQrzgvDFFPkM5cV1E1rbdvUUJUjl2e6fp677ziXb84rLoMsGS5U+YsLupWKGjoKJT+GXtasekwmV2r5zarmKjeaLTfc5E675Za78L31zBZeLFt2+6z+wXuRx54+nszuGBdH7X75AAAAAElFTkSuQmCC" alt="login" width="22" height="30"></image>
+                </svg>
+              </div><a class="topbar__person-link topbar-link" href="#">Личный кабинет</a>
+            </div>
+            <div class="topbar__cart">
+              <div class="topbar__cart-icon">
+                <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#ff8c00" stroke-width="1" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                  <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                  <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                </svg>
+              </div><a class="topbar__cart-link topbar-link" href="#">Корзина</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header__nav">
+        <nav class="head-nav container">
+          <div class="head-nav__buttons"><a class="head-nav__button" href="#">Каталог</a><a class="head-nav__button head-nav__button--dark" href="#">Производители</a></div>
+          <ul class="head-nav__menu">
+            <li class="head-nav__menu-item"><a class="head-nav__menu-link" href="#">О компании</a></li>
+            <li class="head-nav__menu-item"><a class="head-nav__menu-link" href="#">Услуги</a></li>
+            <li class="head-nav__menu-item"><a class="head-nav__menu-link" href="#">Акции и скидки</a></li>
+            <li class="head-nav__menu-item"><a class="head-nav__menu-link" href="#">Полезная информация</a></li>
+            <li class="head-nav__menu-item"><a class="head-nav__menu-link" href="#">Новости</a></li>
+            <li class="head-nav__menu-item"><a class="head-nav__menu-link" href="#">Контакты</a></li>
+            <li class="head-nav__menu-item"><a class="head-nav__menu-link" href="#">Проверка заказа</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <div class="content container">
+      <aside class="content__aside">
+        <div class="aside-ft">
+          <h2 class="aside-ft__title">Подбор по параметрам</h2>
+          <form class="aside-ft__form">
+            <fieldset class="aside-ft__set">
+              <legend class="aside-ft__set-cap">Марка</legend>
+              <ul class="aside-ft__brand-list checkgroup">
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="brand" id="brand-ariston">
+                  <label class="checkgroup__label" for="brand-ariston">Ariston</label>
+                </li>
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="brand" id="brand-baxi">
+                  <label class="checkgroup__label" for="brand-baxi">Baxi</label>
+                </li>
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="brand" id="brand-protherm">
+                  <label class="checkgroup__label" for="brand-protherm">Protherm</label>
+                </li>
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="brand" id="brand-lemax">
+                  <label class="checkgroup__label" for="brand-lemax">Лемакс</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="aside-ft__set">
+              <legend class="aside-ft__set-cap">Цена</legend>
+              <ul class="aside-ft__price">
+                <li class="aside-ft__price-item"> 
+                  <label class="aside-ft__price-label">От</label>
+                  <input class="aside-ft__price-input" type="text" name="" value="40000">
+                </li>
+                <li class="aside-ft__price-item">
+                  <label class="aside-ft__price-label">До</label>
+                  <input class="aside-ft__price-input" type="text" name="" value="1140000">
+                </li>
+              </ul>
+              <div class="aside-ft__price-slider">
+                <div class="range">
+                  <div class="range__scale">
+                    <div class="range__bar">
+                      <div class="range__control range__control--min"></div>
+                      <div class="range__control range__control--max"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="aside-ft__set">
+              <legend class="aside-ft__set-cap">Камера сгорания</legend>
+              <ul class="aside-ft__brand-list checkgroup">
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="chamber" id="chamber-closed">
+                  <label class="checkgroup__label" for="chamber-closed">Закрытая</label>
+                </li>
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="chamber" id="chamber-open">
+                  <label class="checkgroup__label" for="chamber-open">Открытая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="aside-ft__set">
+              <legend class="aside-ft__set-cap">Электропитание</legend>
+              <ul class="aside-ft__brand-list checkgroup">
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="power" id="power-auto">
+                  <label class="checkgroup__label" for="power-auto">Энергонезависимый</label>
+                </li>
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="power" id="power-220">
+                  <label class="checkgroup__label" for="power-220">220В</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="aside-ft__set">
+              <legend class="aside-ft__set-cap">ГВС</legend>
+              <ul class="aside-ft__brand-list checkgroup">
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="gvs" id="gvs-1">
+                  <label class="checkgroup__label" for="gvs-1">Пластинчатый теплообменник</label>
+                </li>
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="gvs" id="gvs-2">
+                  <label class="checkgroup__label" for="gvs-2">Встроенный бойлер</label>
+                </li>
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="gvs" id="gvs-3">
+                  <label class="checkgroup__label" for="gvs-3">Змеевик</label>
+                </li>
+                <li class="checkgroup__item">
+                  <input class="visually-hidden checkgroup__input" type="checkbox" name="gvs" id="gvs-4">
+                  <label class="checkgroup__label" for="gvs-4">Не предусмотрено</label>
+                </li>
+              </ul>
+            </fieldset><a class="aside-ft__reset" id="ft-reset"> <span>Сбросить параметры</span></a>
+          </form>
+        </div>
+      </aside>
+      <main class="content__main">
+        <div class="catalog">
+          <h1 class="catalog__title">Котлы, котельное оборудование</h1>
+          <div class="catalog__sorting">
+            <div class="catalog__sorting-item">
+              <p class="catalog__sorting-cap">Показать сначала:</p>
+              <ul class="catalog__sorting-orders">
+                <li class="catalog__sorting-order catalog__sorting-order--cost">Дорогие</li>
+                <li class="catalog__sorting-order catalog__sorting-order--popular">Популярные</li>
+              </ul>
+            </div>
+            <div class="catalog__sorting-item">
+              <p class="catalog__sorting-cap">Выводить по: </p>
+              <p class="catalog__sorting-npages">20</p>
+              <!-- здесь должен быть кастомный селект-->
+            </div>
+          </div>
+          <section class="store">
+            <ul class="store__list">
+              <li class="store__card">
+                <div class="store__picbox"><img class="store__pic" alt="котел" src="img/item-1.png"></div><a class="store__name-link" href="#">Котел стальной Патриот 12,5 без дымохода</a>
+                <p class="available available--tr">в наличии</p>
+                <p class="store__price">5990</p>
+                <div class="store__button"><a class="card-cart" href="#">
+                    <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#ff8c00" stroke-width="2" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                      <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                      <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                    </svg></a>
+                </div>
+              </li>
+              <li class="store__card">
+                <div class="store__picbox"><img class="store__pic" alt="котел" src="img/item-2.png"></div><a class="store__name-link" href="#">Котел стальной Патриот 12,5 без дымохода</a>
+                <p class="available available--tr">в наличии</p>
+                <p class="store__price">3990<span class="store__price-original">5490</span></p>
+                <div class="store__button"><a class="card-cart" href="#">
+                    <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#ff8c00" stroke-width="2" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                      <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                      <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                    </svg></a>
+                </div>
+                <div class="store__sale">
+                  <div class="discount-badge">-30%</div>
+                </div>
+              </li>
+              <li class="store__card">
+                <div class="store__picbox"><img class="store__pic" alt="котел" src="img/item-3.png"></div><a class="store__name-link" href="#">Котел стальной Патриот 12,5 без дымохода</a>
+                <p class="available available--tr">в наличии</p>
+                <p class="store__price">3400</p>
+                <div class="store__button"><a class="card-cart" href="#">
+                    <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#ff8c00" stroke-width="2" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                      <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                      <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                    </svg></a>
+                </div>
+              </li>
+              <li class="store__card">
+                <div class="store__picbox"><img class="store__pic" alt="котел" src="img/item-4.png"></div><a class="store__name-link" href="#">Котел стальной Патриот 12,5 без дымохода</a>
+                <p class="available available--tr">в наличии</p>
+                <p class="store__price">5990</p>
+                <div class="store__button"><a class="card-cart" href="#">
+                    <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#ff8c00" stroke-width="2" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                      <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                      <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                    </svg></a>
+                </div>
+              </li>
+              <li class="store__card">
+                <div class="store__picbox"><img class="store__pic" alt="котел" src="img/item-5.png"></div><a class="store__name-link" href="#">Котел стальной Патриот 12,5 без дымохода</a>
+                <p class="available available--tr">в наличии</p>
+                <p class="store__price">5990</p>
+                <div class="store__button"><a class="card-cart" href="#">
+                    <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#ff8c00" stroke-width="2" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                      <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                      <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                    </svg></a>
+                </div>
+              </li>
+              <li class="store__card">
+                <div class="store__picbox"><img class="store__pic" alt="котел" src="img/item-6.png"></div><a class="store__name-link" href="#">Котел стальной Патриот 12,5 без дымохода</a>
+                <p class="available available--not">под заказ 5 дней </p>
+                <p class="store__price">5990</p>
+                <div class="store__button"><a class="card-cart" href="#">
+                    <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#ff8c00" stroke-width="2" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                      <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                      <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                    </svg></a>
+                </div>
+              </li>
+              <li class="store__card">
+                <div class="store__picbox"><img class="store__pic" alt="котел" src="img/item-7.png"></div><a class="store__name-link" href="#">Котел стальной Патриот 12,5 без дымохода</a>
+                <p class="available available--tr">в наличии</p>
+                <p class="store__price">3400</p>
+                <div class="store__button"><a class="card-cart" href="#">
+                    <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#ff8c00" stroke-width="2" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                      <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                      <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                    </svg></a>
+                </div>
+              </li>
+              <li class="store__card">
+                <div class="store__picbox"><img class="store__pic" alt="котел" src="img/item-8.png"></div><a class="store__name-link" href="#">Котел стальной Патриот 12,5 без дымохода</a>
+                <p class="available available--tr">в наличии</p>
+                <p class="store__price">3990<span class="store__price-original">5490</span></p>
+                <div class="store__button"><a class="card-cart" href="#">
+                    <svg class="cart-icon" width="22" height="30" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#ff8c00" stroke-width="2" fill="none" d="M3 4h11l-1.1 5h-9L3 4l-.5-3H1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                      <circle cx="5.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                      <circle cx="11.5" cy="12.5" r="1.5" stroke="#ff8c00" fill="#fff"></circle>
+                    </svg></a>
+                </div>
+                <div class="store__sale">
+                  <div class="discount-badge">-30%</div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <nav class="pagination">
+            <div class="pagination__control pagination__control--prev"><a class="pagination__control-link" href="#"><</a></div>
+            <div class="pagination__control pagination__control--next"><a class="pagination__control-link" href="#">></a></div>
+            <ul class="pagination__list">
+              <li class="pagination__item"><a class="pagination__link pagination__link--current">1</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
+            </ul>
+          </nav>
+        </div>
+        <section class="site-desc">
+          <h2 class="site-desc__title">Котельное оборудование</h2>
+          <div class="site-desc__text">
+            <p class="site-desc__pg">Котлы и котельное оборудование подбираются при возведении и устройстве котельной в зависимости от вида котельной.</p>
+            <p class="site-desc__pg">По типу размещения котельные могут быть стационарными и блочно-модульными. При устройстве стационарной котельной возводится здание с фундаментом, стенами и кровлей. Монтаж котлов и котельного оборудования производится на месте.</p>
+            <p class="site-desc__pg">Блочно-модульные котельные находят все большее применение благодаря своим преимуществам. Блочно-модульные котельные поставляются в полной сборке: от здания котельной до всего комплекта оборудования. Их отличают быстрый ввод в эксплуатацию, высокий КПД, мобильность и широкие возможности размещения. Они могут быть отдельностоящими, пристроенными, встроенными, размещаться на крыше и в подвале.</p>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__card contacts__card--left">
+            <h3 class="contacts__cap">Связаться</h3>
+            <p class="contacts__text">Для связи с нами оставьте свои контактные данные. Наш менеджер позвонит вам в течение 20 минут и проконсультирует по любому интересующему вас вопросу.</p><a class="contacts__button">Обратный звонок</a>
+          </div>
+          <div class="contacts__card contacts__card--right">
+            <h3 class="contacts__cap">Подписаться на рассылку</h3>
+            <p class="contacts__text">В нашей рассылке новости о новых товарах, скидках, акциях, а также, интересные гайды, лекции и семинары от компании.</p><a class="contacts__button">Подписаться</a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../js/main.min.js"></script>
+  </body>
+</html>
