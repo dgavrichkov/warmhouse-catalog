@@ -42,7 +42,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 15px;
     }
 
     &__phone {
