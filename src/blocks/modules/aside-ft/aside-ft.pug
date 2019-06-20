@@ -26,3 +26,37 @@
                label.aside-ft__price-label До
                input(type="text", name="", value="1140000").aside-ft__price-input
          div.aside-ft__price-slider
+      fieldset.aside-ft__set
+         legend.aside-ft__set-cap Камера сгорания
+         ul.aside-ft__brand-list.checkgroup
+            li.checkgroup__item
+               input(type="checkbox", name="chamber", id="chamber-closed", class="visually-hidden checkgroup__input")
+               label(for="chamber-closed").checkgroup__label Закрытая
+            li.checkgroup__item
+               input(type="checkbox", name="chamber", id="chamber-open", class="visually-hidden checkgroup__input") 
+               label(for="chamber-open").checkgroup__label Открытая
+      fieldset.aside-ft__set
+         legend.aside-ft__set-cap Электропитание
+         ul.aside-ft__brand-list.checkgroup
+            li.checkgroup__item
+               input(type="checkbox", name="power", id="power-auto", class="visually-hidden checkgroup__input")
+               label(for="power-auto").checkgroup__label Энергонезависимый
+            li.checkgroup__item
+               input(type="checkbox", name="power", id="power-220", class="visually-hidden checkgroup__input") 
+               label(for="power-220").checkgroup__label 220В
+      fieldset.aside-ft__set
+         legend.aside-ft__set-cap ГВС
+         ul.aside-ft__brand-list.checkgroup
+            li.checkgroup__item
+               input(type="checkbox", name="gvs", id="gvs-1", class="visually-hidden checkgroup__input")
+               label(for="gvs-1").checkgroup__label Пластинчатый теплообменник
+            li.checkgroup__item
+               input(type="checkbox", name="gvs", id="gvs-2", class="visually-hidden checkgroup__input") 
+               label(for="gvs-2").checkgroup__label Встроенный бойлер
+            li.checkgroup__item
+               input(type="checkbox", name="gvs", id="gvs-3", class="visually-hidden checkgroup__input")  
+               label(for="gvs-3").checkgroup__label Змеевик
+            li.checkgroup__item
+               input(type="checkbox", name="gvs", id="gvs-4", class="visually-hidden checkgroup__input") 
+               label(for="gvs-4").checkgroup__label Не предусмотрено
+      a(id="ft-reset").aside-ft__reset Сбросить параметры

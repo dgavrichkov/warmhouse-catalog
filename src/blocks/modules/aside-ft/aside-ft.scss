@@ -89,6 +89,19 @@
         margin-top: 20px;
         background-color: $color-attention-neutral;
     }
+    &__reset {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+        background-color: $color-bar;
+        font: 700 15px $font-condenced;
+        color: $color-text-secondary;
+    }
 }
 
 .checkgroup {
