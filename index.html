@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Warmhouse</title>
+    <title>gulp-pug-starter</title>
     <meta name="theme-color" content="#c9e0e04d">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -23,11 +23,11 @@
     <header class="header">
       <section class="header__top">
         <div class="topbar container">
-          <div class="topbar__logo"><img src="img/logo.png" alt="logo"></div>
+          <div class="topbar__logo"><img src="/img/logo.png" alt="logo"></div>
           <div class="topbar__items">
             <div class="topbar__search">
               <label class="visually-hidden" for="headsearch">Поиск</label>
-              <input class="topbar__search-field" name="headsearch" id="headsearch" type="text/css" placeholder="Поиск по артикулу или названию">
+              <input class="topbar__search-field" name="headsearch" id="headsearch" type="text" placeholder="Поиск по артикулу или названию">
             </div>
             <div class="topbar__phone">
               <p class="topbar__phone-label">Телефон</p><a class="topbar__phone-num" href="84832312331">8 4832 31-23-31</a>
@@ -289,8 +289,14 @@
             </ul>
           </section>
           <nav class="pagination">
-            <div class="pagination__control pagination__control--prev"><a class="pagination__control-link" href="#"><</a></div>
-            <div class="pagination__control pagination__control--next"><a class="pagination__control-link" href="#">></a></div>
+            <div class="pagination__control pagination__control--prev"><a class="pagination__control-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="16">
+                  <path fill-rule="evenodd" d="M6 2L0 8l6 6V2z"></path>
+                </svg></a></div>
+            <div class="pagination__control pagination__control--next"><a class="pagination__control-link" href="#"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="16">
+                  <path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"></path>
+                </svg></a></div>
             <ul class="pagination__list">
               <li class="pagination__item"><a class="pagination__link pagination__link--current">1</a></li>
               <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
